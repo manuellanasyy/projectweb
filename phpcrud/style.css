@@ -1,0 +1,207 @@
+html {
+    background-color: #191825;
+}
+
+.container {
+        /* margin: 80px 50px 80px 50px; */
+        padding-top: 40px;
+        display: flex;
+    justify-content: center;
+}
+
+
+.table-cantik {
+    background-color: white;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    
+
+}
+
+.padding {
+    padding: 10px 8px;
+}
+.padding img{
+  width: 100px;
+}
+
+.button-edit{    
+    border: none;
+    background: transparent;
+
+    border-radius: 5px;
+    height: 35px;
+}   
+.button-edit:hover{    
+    border: none;
+    background: black;
+    color: white;
+}   
+.button-detail{
+    border: none;
+    background: transparent;
+
+    border-radius: 5px;
+    height: 35px;
+}
+.button-detail:hover{    
+    border: none;
+    background: black;
+    color: white;
+}   
+.button-delete{
+    border: none;
+    background: transparent;
+
+    border-radius: 5px;
+    height: 35px;
+}
+.button-delete:hover{    
+    border: none;
+    background: black;
+    color: white;
+}   
+
+.button-add {
+  background-color: #FF5F9E;
+  border: 2px solid #E90064;
+  border-radius: 10px;
+  box-shadow: #B3005E 4px 4px 0 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-add:hover {
+  background-color: #fff;
+}
+
+.button-add:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-add {
+    min-width: 100px;
+    padding: 0 25px;
+  }
+}
+
+/* CSS */
+.button-logout-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-logout-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-logout-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.button-logout-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-logout-front {
+    font-size: 1.25rem;
+  }
+}
+
+.button-logout-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-logout-pushable:hover .button-logout-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-logout-pushable:active .button-logout-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-logout-pushable:hover .button-logout-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-logout-pushable:active .button-logout-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-logout-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
